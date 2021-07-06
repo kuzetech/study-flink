@@ -12,6 +12,7 @@ public class App {
 
     public static void main( String[] args ) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+
         DataStreamSource<Tuple2<String, Integer>> source = env.fromElements(
                 Tuple2.of("a", 1),
                 Tuple2.of("b", 2),
@@ -22,7 +23,7 @@ public class App {
 
         source.print();
 
-        env.execute("asdasd");
+        env.execute("job name");
     }
 
 }
