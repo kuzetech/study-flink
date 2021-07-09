@@ -16,6 +16,7 @@
     <scala.version>2.11</scala.version>
     <flink.version>1.11.0</flink.version>
     <log4j.version>2.12.1</log4j.version>
+    <iceberg.version>0.11.1</iceberg.version>
   </properties>
 
   <dependencies>
@@ -84,6 +85,11 @@
       <groupId>org.apache.logging.log4j</groupId>
       <artifactId>log4j-core</artifactId>
       <version>${log4j.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.iceberg</groupId>
+      <artifactId>iceberg-api</artifactId>
+      <version>${iceberg.version}</version>
     </dependency>
   </dependencies>
   <build>
