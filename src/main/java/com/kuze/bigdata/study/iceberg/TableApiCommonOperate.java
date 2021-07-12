@@ -46,7 +46,7 @@ public class TableApiCommonOperate {
 
 
         // 测试写入
-        //tenv.executeSql("insert into hadoop_catalog.iceberg_hadoop_db.iceberg_001 select 106,'106'");
+        tenv.executeSql("insert into hadoop_catalog.iceberg_hadoop_db.iceberg_001 select 106,'106'");
 
     }
 }
