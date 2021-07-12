@@ -1,4 +1,4 @@
-package com.kuze.bigdata.study.iceberg.api;
+package com.kuze.bigdata.study.iceberg.manage_api;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.iceberg.catalog.Namespace;

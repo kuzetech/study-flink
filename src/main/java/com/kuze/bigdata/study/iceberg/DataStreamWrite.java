@@ -18,9 +18,10 @@ public class DataStreamWrite {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
-        // 只能使用batch写入的方式
+        //启用该方式无法写入数据
         //DataStreamSource<String> source = env.socketTextStream("localhost", 9999);
 
+        //现阶段只能使用batch写入的方式
         DataStreamSource<String> source = env.fromElements("aaaa", "bbb", "ccc");
 
         SingleOutputStreamOperator<RowData> input = source.map(new MapFunction<String, RowData>() {
